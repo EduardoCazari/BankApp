@@ -1,10 +1,8 @@
-class LogIn {
+class Login {
 
    private String userName;
    private String password;
    
-
-
     public void setUserName(String userName) {
         this.userName = userName;
     }
@@ -14,7 +12,7 @@ class LogIn {
     }
 
     public void confirmation() {
-        System.out.println("your user name is " + userName + " and your password has " + password.length() + " characters long");
+        System.out.println("Welcome " + userName + "! We checked your password and it is " + password.length() + " characters long.");
     }
     
 }
