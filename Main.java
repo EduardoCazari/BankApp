@@ -13,9 +13,16 @@ class Main {
         System.out.println("Insert your Password: ");
         login.setPassword(sc.nextLine());
 
-        sc.close();
-
         login.confirmation();
+
+        Accounts checking = new Accounts();
+        checking.setBalance(0.0);
+
+        System.out.println("Type the ammount of your first deposit:");
+        checking.setDeposit(sc.nextDouble());
+
+
+        System.out.println("Your balance is " + checking.moneyIn());
 
 
     }
