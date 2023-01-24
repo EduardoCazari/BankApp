@@ -22,7 +22,5 @@ class Accounts {
 
     public double getInterestRate() {
         return interestRate;
-    }
-
-    
+    }   
 }
