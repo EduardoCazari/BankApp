@@ -1,5 +1,6 @@
 import java.util.*;
 
+
 class Main {
 
     public static void main(String[] args) {
@@ -18,7 +19,7 @@ class Main {
         //-------------------------------------------------
 
         // Checking Account
-        Accounts checking = new Accounts();
+        Checking checking = new Checking(0.0, 0.0, 0.0);
         checking.setBalance(0.0);
 
         System.out.println("Type the ammount of your deposit to your checking account:");
@@ -28,16 +29,17 @@ class Main {
         //-------------------------------------------------------------------
 
         // Savings Account
-        Accounts savings = new Accounts();
+        Savings savings = new Savings(0.0, 0.0, 0.0, 0.0);
         savings.setBalance(0.0);
         savings.setInterestRate(12.0);
         
         System.out.println("Type the ammount of your deposit to your savings account:");
         savings.setDeposit(sc.nextDouble());
 
-        System.out.println("Your savings account balance is " + checking.moneyIn() + " at an interest rate of " + savings.getInterestRate() + "%");
+        System.out.println("Your savings account balance is " + savings.moneyIn() + " at an interest rate of " + savings.getInterestRate() + "%");
 
-        sc.close();
+        sc.close(); 
 
+       
     }
 }
