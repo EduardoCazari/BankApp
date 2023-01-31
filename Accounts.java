@@ -1,26 +1,19 @@
-class Accounts {
+public class Accounts {
 
-    private double deposit;
-    private double balance;
-    private double interestRate;
-
-    public void setBalance(double balance) {
-     this.balance = balance;
-    }
-
-    public void setDeposit(double deposit) {
-     this.deposit = deposit;
+    double deposit;
+    double withdraw;
+    double balance;
+    
+    public Accounts(double deposit, double withdraw, double balance) {
+        this.deposit = deposit;
+        this.withdraw = withdraw;
+        this.balance = balance;
     }
 
     public double moneyIn() {
-     return balance + deposit;
+        return balance + deposit;
     }
 
-    public void setInterestRate(double interestRate) {
-        this.interestRate = interestRate;
+    public double moneyOut() {
+        return balance - withdraw;
     }
-
-    public double getInterestRate() {
-        return interestRate;
-    }   
-}
