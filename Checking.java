@@ -20,7 +20,8 @@ public class Checking extends Accounts {
     public double moneyIn() {
         return balance + deposit;
     }
-
+    
+    
     public double moneyOut() {
         return balance - withdraw;
     }
