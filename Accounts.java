@@ -14,8 +14,6 @@ public class Accounts {
         return balance + deposit;
     }
 
-    public double moneuOut() {
+    public double moneyOut() {
         return balance - withdraw;
     }
-    
-}
